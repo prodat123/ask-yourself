@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, body {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Custom styles for transition */
+.transition-max-height {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
