@@ -34,6 +34,7 @@ const AuthForm = ({ setIsLoggedIn }) => {
             console.log(data);
 
             localStorage.setItem('userId', data[0].id);
+            localStorage.setItem('userEmail', data[0].email);
             setMessage('Registration successful!');
             setIsLoggedIn(true);
 
