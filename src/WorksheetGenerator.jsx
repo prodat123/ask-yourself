@@ -204,7 +204,7 @@ function WorksheetGenerator() {
     return (
         <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md border border-primary">
             <h1 className="text-3xl font-bold text-center text-primary">Custom Worksheet</h1>
-            <p className='text-center my-4'>(Use the questions you did yesterday and today to generate new worksheets)</p>
+            <p className='text-center my-4'>(Use the questions you did in the past week to generate new worksheets)</p>
             <div className="mb-4 flex items-center justify-center">
                 {/* Main Tabs for Create and Past Worksheets */}
                 <button

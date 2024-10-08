@@ -1,24 +1,27 @@
 // supabaseFunctions.js
 import supabase from './SupabaseClient';
 
-// Function to add a new user
 export const addUser = async (userData) => {
     try {
-        const { data, error } = await supabase.from('users').insert([
-            { email: userData.email, password: userData.password }, // Adjust according to your table structure
-        ]);
+        const { data, error } = await supabase
+            .from('users')
+            .insert([
+                { email: userData.email, password: userData.password } // Adjust according to your table structure
+            ])
+            .select(); // This ensures that the inserted data is returned
 
         if (error) {
             console.error('Error adding user:', error);
             return { error };
         }
 
-        return { data }; // Return the newly created user data if needed
+        return { data }; // Return the newly created user data
     } catch (err) {
         console.error('Error in addUser:', err);
         return { error: err.message };
     }
 };
+
 
 // Function to add a new hard question
 export const addHardQuestion = async (questionText, questionType, questionSubject, correctAnswer, difficultyLevel, userId = null) => {
