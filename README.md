@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Study Ascension (studyascension.online)
+This website follows the "Intelligent Tutoring System" path and was made using the React Framework(Javascript), Tailwindcss, Supabase(Open-source Database), Youtube API, and HuggingFace API. Currently, the website is still in its demo stage whereas once it gets publicized, edits will be made to the code to make it more secure for users to operate.  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem:
+Students currently find it hard to study outside of school because there is a lack of available resources that are effective at teaching. Moreover, group education is also challenging if the student is not at the same level as other students in the class, which may cause them to feel left behind. 
 
-## Available Scripts
+## Solution: 
+A website that uses AI text generation and databases to create questions that allow students to study at their own pace. The questions will adapt to the students' current understanding of the subject and explain the topic in detail to them. They can also test themselves with worksheets that are based on past mistakes and challenges to determine their improvement in the subject.
 
-In the project directory, you can run:
+## Impact:
+I hope to introduce Study Ascension as a potential solution to help education systems better prepare their students for exams and universities. As a student myself, I see a lot of wasted potential from talented students who are unable to perform their best because they do not understand classroom teachings. With this product, I hope to not only use AI for the progression of education, but make a solution that is compatible with all students no matter their skill level and educational background. 
 
-### `npm start`
+## Main Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Question Generator:
+1. Questions are generated based on an input written topic, and a selection of subject, difficulty, and type.
+2. When the questions are loaded, the user can input their answer. If their answer is correct, they are prompted with the option to save the question and if they are wrong, the question is automatically saved into the database.
+3. Answers also come with videos which are related to the question using the Youtube API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Question List and Notes:
+1. The user will be able to view their past mistakes or questions that they saved along with their answers.
+2. There is a "Generate Notes" button which will allow the user to create new notes based on the question. 
 
-### `npm test`
+### Worksheet Generator:
+1. Users will be able to select a subject that they have done in the past week and generate a worksheet based on the questions of that subject.
+2. Users will also be able to save the worksheet for future reference in case they want to practice again.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Current Limitations
+1. There are a limited number of API calls with the free version of HuggingFace API and the Youtube API.
+2. There are not a lot of visuals in notes and worksheets.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Expansion Plans
+1. Add more features such as an answering tool. (This is already currently in the works as seen in the src folder of this project)
+2. Enable open-ended questions and answers.
+3. Create a gamified system similar to Duolingo in order to engage students and motivate them to study even more. 
